@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urna eletronica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Urna eletronica</h1>
+    </header>
+    <main>
+        <div id="tela">
+            <article id="left">
+                <h4 class="seu-voto">
+                    Seu voto para
+                </h4>
+                <h1 id="cargo-politico">Vereador</h1>
+                <div class="digitados">
+                    <span name="numeroDigitado" class="numeroDigitado">
+                    </span>
+                
+                    <span name="numeroDigitado" class="numeroDigitado">
+                
+                    </span>
+                    <span name="numeroDigitado" class="numeroDigitado">
+                
+                    </span>
+                    <span name="numeroDigitado" class="numeroDigitado">
+                
+                    </span>
+                    <span name="numeroDigitado" class="numeroDigitado">
+                
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <p id="nome"></p>
+                    <p id="partido"></p>
+                </div>
+
+                <div id="instrucoes">
+                    
+                </div>
+            </article>
+
+            <article id="right">
+                <div id="foto">
+                   
+                </div>
+            </article>
+        </div>
+
+        <div id="teclado">
+            <div id="justica">
+                <div id="Logo">
+                    <img width="80" src="https://brasao.org/wp-content/uploads/2018/09/brasao-brasil-preto-e-branco.png" alt="brasao da justiça federal">
+                </div>
+
+                <h1 >Jutiça Eleitoral</h1>
+            </div>
+
+            <div id="botoes">
+                <div id="btnNumeros">
+                    <button onclick="digitar(0)" class="btn" id="btn1" value="1">1</button>
+                    <button onclick="digitar(1)" class="btn" id="btn2" value="2">2</button>
+                    <button onclick="digitar(2)" class="btn" id="btn3" value="3">3</button>
+                    <button onclick="digitar(3)" class="btn" id="btn4" value="4">4</button>
+                    <button onclick="digitar(4)" class="btn" id="btn5" value="5">5</button>
+                    <button onclick="digitar(5)" class="btn" id="btn6" value="6">6</button>
+                    <button onclick="digitar(6)" class="btn" id="btn7" value="7">7</button>
+                    <button onclick="digitar(7)" class="btn" id="btn8" value="8">8</button>
+                    <button onclick="digitar(8)" class="btn" id="btn9" value="9">9</button>
+                    <button onclick="digitar(9)" class="btn" id="btn0" value="0">0</button>
+                </div>
+
+                <div id="btnOpcao">
+                    <button  id="btnBranco">branco</button>
+
+                    <button  id="btnCorrige">corrige</button>
+
+                    <button  id="btnVerde">Confirma</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
